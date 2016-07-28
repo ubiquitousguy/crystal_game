@@ -3,15 +3,15 @@ $(document).ready(function(){
   //  console.log( "ready!" );
 var numToMatch;
 var score = 0;
-var win = 0;
+var wins = 0;
 var losses = 0;
 var total = 0;
 var gem1;
 var gem2;
 var gem3;
 var gem4;
-//create a function to pull up a random number between 19-120
 
+//create a function to pull up a random number between 19-120
 var getranNum = function(min, max) {
 return Math.floor(Math.random() * (max - min) + min);
 }
@@ -34,13 +34,13 @@ gem4 = getranNum(1, 12);
 console.log(gem4)
 
 //empty the stats
-//$("#total").empty(); doesnt present 0
+
 total = 0;
 $('#total').html(total);
 };
 start();
 
-// function for crystal #1
+// function for gem1
 $("#gem1").click(function(){
 	total = gem1 + total;
 	//console.log(total);
@@ -65,7 +65,7 @@ $("#gem1").click(function(){
 	}
 });
 
-// function for crystal #2
+// function for gem2
 $("#gem2").click(function(){
 	total = gem2 + total;
 	//console.log(total);
@@ -90,7 +90,7 @@ $("#gem2").click(function(){
 	}
 
 });
-// function for crystal #3
+// function for gem3
 $("#gem3").click(function(){
 	total = gem3 + total;
 	//console.log(total);
@@ -115,7 +115,7 @@ $("#gem3").click(function(){
 	}
 
 });
-// function for crystal #4
+// function for gem4
 $("#gem4").click(function(){
 	total = gem4 + total;
 	//console.log(total);
@@ -140,29 +140,3 @@ $("#gem4").click(function(){
 	}
  });
 });
-// var ranNum=Math.floor((Math.random() * 102) + 19);
-// var gem1=Math.floor((Math.random() * 13) + 0);
-// var gem2=Math.floor((Math.random() * 13) + 0);
-// var gem3=Math.floor((Math.random() * 13) + 0);
-// var gem4=Math.floor((Math.random() * 13) + 0);
-// console.log(ranNum);
-//
-// //create the onclick jquery function for the gems
-// $("#num").html(ranNum);
-// score = score + gem1;
-// $("#sum").html(score);
-// function showScore (score){
-//   gem1 = gem1.getAttribute("data-score");
-//   console.log(gem1);
-// }
-
-  // $('#gem1').on('click', function(){
-  //   total=gem1+total
-  // });
-
-
-//create the function to pick 1 of four crystals and each choice will attach a set value to the crystals for the duration of the game.
-
-//create another function to add the value of each crystal when chosen for the duration of the game.
-
-//
