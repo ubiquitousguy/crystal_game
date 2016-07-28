@@ -1,0 +1,23 @@
+body {
+  background-image: url ("background.jpg");
+}
+  .para {
+    width: 500px;
+    height: 500px;
+}
+  #gem1{
+    width: 100px;
+    height: 100px;
+  }
+  #gem2 {
+    width: 100px;
+    height: 100px;
+  }
+  #gem3 {
+    width: 100px;
+    height: 100px;
+  }
+  #gem4 {
+    width: 100px;
+    height: 100px;
+  }
